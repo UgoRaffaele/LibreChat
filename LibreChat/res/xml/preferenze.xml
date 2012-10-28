@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+  <PreferenceCategory android:title="@string/menu_chat">
+      
+	<EditTextPreference android:key="username"
+		android:title="@string/testo_username"
+		android:defaultValue="@string/suggerimento_username" 
+		android:dialogTitle="@string/testo_username" 
+		android:dialogMessage="@string/dialog_username" 
+		android:icon="@android:drawable/ic_menu_view" />
+	
+	<ListPreference android:key="notifiche"
+	    android:title="@string/testo_notifiche"
+		android:entries="@array/preferenze_notifiche_entries"
+		android:entryValues="@array/preferenze_notifiche_values"
+		android:defaultValue="0"
+		android:dialogTitle="@string/testo_notifiche" 
+		android:icon="@drawable/ic_menu_notifications" />
+    
+  </PreferenceCategory>
+ 
+  <PreferenceCategory android:title="@string/menu_crypto">
+      
+    <SwitchPreference android:key="crypto"
+        android:title="@string/testo_crypto"
+        android:summaryOn="@string/summary_crypto_on" 
+        android:summaryOff="@string/summary_crypto_off" />
+    
+    <EditTextPreference android:key="cryptokey"
+		android:dependency="crypto"
+		android:title="@string/testo_cryptokey"
+		android:summary="@string/summary_cryptokey"
+		android:dialogTitle="@string/testo_cryptokey"
+		android:defaultValue="@string/default_cryptokey"
+		android:icon="@drawable/ic_menu_login" />
+    
+  </PreferenceCategory>
+  
+</PreferenceScreen>

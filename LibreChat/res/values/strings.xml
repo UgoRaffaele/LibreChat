@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">LibreChat</string>
+    <string name="title_activity_chat">LibreChat</string>
+    <string name="title_activity_preferenze">Preferenze</string>
+    
+    <string name="suggerimento_messaggio">scrivi qui il tuo messaggio</string>
+    <string name="testo_invia">Invia</string>
+        
+    <string name="menu_chat">Chat</string>
+    <string name="menu_crypto">Crittografia</string>
+    
+    <string name="testo_username">Username</string>
+    <string name="dialog_username">Scegli il nome utente che apparirà nella chat</string>
+    <string name="suggerimento_username">Utente001</string>
+    
+    <string name="testo_notifiche">Notifiche</string>
+    
+    <string name="testo_crypto">Comunicazioni</string>
+    <string name="summary_crypto_on">cifrate</string>
+    <string name="summary_crypto_off">non cifrate</string>
+    
+    <string name="testo_cryptokey">Chiave</string>
+    <string name="summary_cryptokey">Chiave di Cifratura</string>
+    <string name="default_cryptokey">prova</string>
+
+</resources>

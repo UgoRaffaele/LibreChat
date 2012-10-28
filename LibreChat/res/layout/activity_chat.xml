@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ScrollView Chat -->
+    <ScrollView
+        	android:id="@+id/Chat"
+        	android:layout_width="match_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="1" >
+
+        <TableLayout
+            android:id="@+id/ChatList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    </ScrollView>
+    <!-- /ScrollView Chat -->
+
+    <!-- Pannello di Invio Messaggi -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#eee" >
+
+        <EditText
+            android:id="@+id/modificaMessaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/bottoneInvia"
+            android:ems="10"
+            android:hint="@string/suggerimento_messaggio"
+            android:inputType="textMultiLine"
+            android:textColor="#000" />
+           
+        <Button
+            android:id="@+id/bottoneInvia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/testo_invia"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+	<!-- /Pannello di Invio Messaggi -->  
+
+</LinearLayout>
